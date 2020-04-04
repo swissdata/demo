@@ -1,29 +1,29 @@
 # swissdata - Machine Readable Public Data
 
-*swissdata* is an attempt to improve machine readibility of publicly available data. The project was born based on our need to make macroeconomic time series more accesible, but it seems exentendable to other data sets as well.
+*swissdata* is an attempt to improve machine readibility of publicly available data. The project was born based on our need to make macroeconomic time series more accesible, but it seems extendable to other data sets as well.
 
-## Two text files
+## Two Text Files
 
-To keep it as simple as possilbe, we keep the information in two text files, one with the *data*, another one with the titles, the sources, the hierarchical strucutre, and all the natural language labels -- the *meta information*.
+To keep it as simple as possilbe, we store information in two text files, one file for the *data*, another one for the titles, the sources, the hierarchical strucutre, and all the natural language labels -- the *meta information* (data description).
 
 Because the information is stored in text files only, no special infrastrucutre is needed to disseminate the data: No database, no API Server -- a static URL is sufficient to allow anyone to process your data automatically.
 
-There are two common alternatives to this: The first alternative is a single spreadsheet, stored as `.csv` or `.xlsx`. This is badly suited to hold comprehensive, nested hierarchical information, let alone multi-lingual labels. Multli line headers can be used to solve some of this problems, but they are a nightmare for automated processing.
+There are two common alternatives to our approach: The first alternative is a single spreadsheet, stored as `.csv` or `.xlsx`. Such a two-dimensional design is badly suited to hold comprehensive, nested hierarchical information, let alone multi-lingual labels. Multi line headers can be used to solve some of these problems, but they are a nightmare for automated processing.
 
-The second alternative is a hierarchical data format, such as `.json` or `.xml`.
-They can be processed automatically, but are hard to understand for humans, and hard to manipulate in standard software, such as Excel.
+The second alternative is a single file in a format that allows hierarchical data such as `.json` or `.xml`.
+Such files can be processed automatically, but are hard to read and understand for humans, and are hard to manipulate in standard software such as Excel.
 Also, tabular data will create a lot of redundandcy.
 
 ## csv + json = swissdata
 
 We adress these drawbacks by keeping the information in two files:
 
-- We keep the **data** in their most simple, most intuitive format, most accesible, non-propietary format -- as simple `.csv`.
+- We keep the **data** in their most simple, most intuitive, most accesible, non-propietary format -- a simple `.csv` file.
 
-- The **meta information** gets the most flexible, most cosmopolitan, most accesible, non-propietary format -- a `.json` file.
+- The **meta information** (data description) gets the most flexible, most cosmopolitan, most accessible, non-propietary format -- a `.json` file.
 
-The files are linked together through their identiers.
-Let's have a closer look at these files.
+Time series inside these files are linked through their identifiers.
+The following paragraphs take a closer look at these files.
 
 ### Data: CSV
 
@@ -35,9 +35,9 @@ gdp,nom,csa,1980-01-01,48861.3058246375
 gdp,nom,csa,1980-04-01,49415.3500513887
 gdp,nom,csa,1980-07-01,50142.2214011581
 ...
-gdp,nom,nsa,1980-01-01,TODO
-gdp,nom,nsa,1980-04-01,TODO
-gdp,nom,nsa,1980-07-01,TODO
+gdp,nom,nsa,1980-01-01,47962.720051
+gdp,nom,nsa,1980-04-01,49769.717230
+gdp,nom,nsa,1980-07-01,50561.590896
 ```
 
 The `.csv` file contains the following column as indicated by its first line (header):
@@ -49,24 +49,24 @@ The `.csv` file contains the following column as indicated by its first line (he
 Each combination of key columns uniquely identifies a timeseries within the `.csv` file. The combination of all key columns and the date results in a **composite primary key** that identifies an observation.
 All headers and key parts must be lowercase, ASCII only and may not contain spaces.
 
-A long format offers the following advantages over a wider structure, especially for time series:
+A long format offers the following advantages over a wider structure, particularly for use with time series data:
 
-1. Series can be of different length, without the need for missing values
+1. Series can be of different length, without the need for missing values.
 
-2. Series can be of differnt frequencies, e.g., quartery and monthly, in the same file.
+2. Series can be of different frequencies, e.g., quarterly and monthly, in the same file.
 
 
 ### Meta Infromation: JSON
 
-The meta information is stored in a hierachical JSON structure. It contains:
+The meta information (data description) is stored in a hierachical [JSON](https://www.json.org/json-en.html) structure. It contains:
 
 - general information on the data set, such as title, source and details.
 
-- information on hierarchical structure (e.g., Private Consumption is part of GDP)
+- information on hierarchical structure (e.g., private consumption is part of GDP)
 
 - all labels in arbitrary languages
 
-- a time stamp of the last update. To check if new data is available, it is sufficient to download and inspect the JSON file.
+- a time stamp of the last update. To check if new data are available, it is sufficient to download and inspect the JSON file.
 
 Most modern web browsers provide a user friendly visualization of the .json structure.
 
@@ -110,12 +110,7 @@ The below snippet shows a glimpse of this structure.
 
 ## Code Example: Processing Data with R
 
-
-
-
-
-## Code Example: Processing Data with Python
-
+TODO: insert short description of the R snippet does, link to file R file at the root of the demo repo.
 
 
 
