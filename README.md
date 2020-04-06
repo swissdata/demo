@@ -80,16 +80,18 @@ Note also, that mapping modular parts of the meta information (dimensions) to th
 An example for a JSON with meta data can be found on the [here]((JSON)[https://www.seco.admin.ch/dam/seco/en/dokumente/Wirtschaft/Wirtschaftslage/VIP%20Quartalssch%C3%A4tzungen/ch_seco_gdp.zip.download.zip/ch_seco_gdp.zip])
 
 
-## Code Example: Processing Data with R
+## Code Examples
+
+#### Processing Data with R
 
 A [demo script](http://www.christophsax.com/stuff/script.R) for how to work with swissdata data in R.
 
 
-## Code Example: Processing Data with Python
+#### Processing Data with Python
 
 
 
-## Live Examples - Projects That Use the swissdata Format
+## Live Examples
 
 The following projects use a similar framework to source their data or to make them available to the public.
 
