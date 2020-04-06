@@ -4,7 +4,7 @@
 
 ## Two Text Files
 
-To keep it as simple as possible, we keep the information in two text files, one with the *data*, another one with the titles, the sources, the hierarchical structure, and all the natural language labels -- the *meta information*.
+To keep it as simple as possible, we keep the information in two text files, one for the *data*, another one for the titles, the sources, the hierarchical structure, and all the natural language labels -- the *meta information*.
 
 Because the information is stored in text files only, no special infrastructure is needed to disseminate the data: No database, no API Server -- a static URL is sufficient to allow anyone to process your data automatically.
 
@@ -17,9 +17,9 @@ Such files can be processed automatically, but are hard to read and understand f
 
 We address these drawbacks by keeping the information in two files:
 
-- We keep the **data** in their most simple, most intuitive format, most accessible, non-proprietary format -- as simple `.csv`.
+- We keep the **data** in their most simple, most intuitive format, most accessible, non-proprietary format -- a simple CSV file.
 
-- The **meta information** (data description) gets the most flexible, most cosmopolitan, most accessible, non-proprietary format -- a `.json` file.
+- The **meta information** (data description) gets the most flexible, most cosmopolitan, most accessible, non-proprietary format -- a JSON file.
 
 Variables inside these files are linked together through their identifiers.
 The following paragraphs take a closer look at these files.
