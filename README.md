@@ -82,12 +82,12 @@ An example for a JSON with meta data can be found on the [here]((JSON)[https://w
 
 ## Code Examples
 
-#### Processing Data with R
+#### R
 
 A [demo script](http://www.christophsax.com/stuff/script.R) for how to work with swissdata data in R.
 
 
-#### Processing Data with Python
+#### Python
 
 
 
