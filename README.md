@@ -28,7 +28,7 @@ The following paragraphs take a closer look at these files.
 ### Data: CSV
 
 Consider the following example of quarterly Swiss GDP, published by the State Secretariat of Economic Affairs (SECO).
-The official data is available as a collection of Excel files for now, but the SECO started an additional [test release](https://www.seco.admin.ch/seco/en/home/wirtschaftslage---wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-/daten.html) in a format that is easy to read for machines. The [CSV](https://www.seco.admin.ch/dam/seco/de/dokumente/Wirtschaft/Wirtschaftslage/BIP_Daten/ch_seco_gdp_csv.csv.download.csv/ch_seco_gdp.csv) looks like this:
+The official data are available as a collection of Excel files for now, but the SECO started an additional [test release](https://www.seco.admin.ch/seco/en/home/wirtschaftslage---wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-/daten.html) in a format that is easy to read for machines. The [CSV](https://www.seco.admin.ch/dam/seco/de/dokumente/Wirtschaft/Wirtschaftslage/BIP_Daten/ch_seco_gdp_csv.csv.download.csv/ch_seco_gdp.csv) looks like this:
 
 ```
 structure,type,seas_adj,date,value
