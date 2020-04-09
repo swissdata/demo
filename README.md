@@ -4,9 +4,9 @@
 
 ## Two Text Files
 
-To keep it as simple as possible, we keep the information in two text files, one for the *data*, another one for the titles, the sources, the hierarchical structure, and all the natural language labels -- the *meta information*.
+To keep it as simple as possible, we keep the information in two text files, one for the *data*, another one for the titles, the sources, the hierarchical structure, and all the natural language labels --- the *meta information*.
 
-Because the information is stored in text files only, no special infrastructure is needed to disseminate the data: No database, no API Server -- a static URL is sufficient to allow anyone to process your data automatically.
+Because the information is stored in text files only, no special infrastructure is needed to disseminate the data: No database, no API Server &mdash a static URL is sufficient to allow anyone to process your data automatically.
 
 There are two common alternatives to our approach: The first alternative is a single spreadsheet, stored as `.csv` or `.xlsx`. Such a two-dimensional design is badly suited to hold comprehensive, nested hierarchical information, let alone multi-lingual labels. Multi line headers can be used to solve some of these problems, but they are a nightmare for automated processing.
 
@@ -17,9 +17,9 @@ Such files can be processed automatically, but are hard to read and understand f
 
 We address these drawbacks by keeping the information in two files:
 
-- We keep the **data** in their most simple, most intuitive format, most accessible, non-proprietary format -- a simple CSV file.
+- We keep the **data** in their most simple, most intuitive format, most accessible, non-proprietary format --- a simple CSV file.
 
-- The **meta information** (data description) gets the most flexible, most cosmopolitan, most accessible, non-proprietary format -- a JSON file.
+- The **meta information** (data description) gets the most flexible, most cosmopolitan, most accessible, non-proprietary format --- a JSON file.
 
 Variables inside these files are linked together through their identifiers.
 The following paragraphs take a closer look at these files.
