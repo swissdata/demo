@@ -28,7 +28,7 @@ The following paragraphs take a closer look at these files.
 ### Data: CSV
 
 Consider the following example of quarterly Swiss GDP, published by the State Secretariat of Economic Affairs (SECO).
-The official data is available as a collection of Excel files for now, but the SECO started an additional [test release](https://www.seco.admin.ch/seco/en/home/wirtschaftslage---wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-/daten.html) in a format that is easy to read for machines. The [CSV](https://www.seco.admin.ch/dam/seco/en/dokumente/Wirtschaft/Wirtschaftslage/VIP%20Quartalssch%C3%A4tzungen/ch_seco_gdp.csv.download.csv/ch_seco_gdp.csv) looks like this:
+The official data is available as a collection of Excel files for now, but the SECO started an additional [test release](https://www.seco.admin.ch/seco/en/home/wirtschaftslage---wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-/daten.html) in a format that is easy to read for machines. The [CSV](https://www.seco.admin.ch/dam/seco/de/dokumente/Wirtschaft/Wirtschaftslage/BIP_Daten/ch_seco_gdp_csv.csv.download.csv/ch_seco_gdp.csv) looks like this:
 
 ```
 structure,type,seas_adj,date,value
@@ -56,6 +56,7 @@ A long format offers the following advantages over a wider structure, particular
 
 2. Series can be of different frequencies, e.g., quarterly and monthly, in the same file.
 
+Another example for a data file can be found in [`data/ch_adecco_sjmi.csv`](https://github.com/swissdata/demo/blob/master/data/ch_adecco_sjmi.csv).
 
 ### Meta Information: JSON
 
@@ -77,18 +78,19 @@ Note also, that mapping modular parts of the meta information (dimensions) to th
 
 2. Meta information is not stored redundantly alongside every data record.
 
-An example for a JSON with meta data can be found on the [here]((JSON)[https://www.seco.admin.ch/dam/seco/en/dokumente/Wirtschaft/Wirtschaftslage/VIP%20Quartalssch%C3%A4tzungen/ch_seco_gdp.zip.download.zip/ch_seco_gdp.zip])
+The GDP meta information can be downloaded from [here](https://www.seco.admin.ch/dam/seco/en/dokumente/Wirtschaft/Wirtschaftslage/BIP_Daten/ch_seco_gdp_json.txt.download.txt/ch_seco_gdp_json.txt).
 
+Another example for a JSON with meta information can be found in [`data/ch_adecco_sjmi.json`](https://github.com/swissdata/demo/blob/master/data/ch_adecco_sjmi.json).
 
 ## Code Examples
 
 #### R
 
-A [demo script](http://www.christophsax.com/stuff/script.R) for how to work with swissdata data in R.
+A demo script at [`R/script.R`](https://github.com/swissdata/demo/blob/master/R/script.md).
 
-<!-- TODO: insert short description of the R snippet does, link to file R file at the root of the demo repo. -->
+There is also a [demo script](http://www.christophsax.com/stuff/script.R) that showcases the use of the SECO data.
 
-#### Python
+<!-- #### Python -->
 
 
 ## Live Examples
@@ -98,7 +100,7 @@ The following projects use a similar framework to source their data or to make t
 - [dataseries.org: Switzerland's data series in one place](http://www.dataseries.org/).
 Uses data stored in swissdata format and visualizes it on a Website.
 
-- [SECO Quarterly GDP](). A test release.
+- [SECO Quarterly GDP](https://www.seco.admin.ch/seco/en/home/wirtschaftslage---wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-/daten.html). Currently a test release, but a [demo script](http://www.christophsax.com/stuff/script.R) for how to work with swissdata data in R can be found here.
 
 ## Your Data Machine Readable
 
