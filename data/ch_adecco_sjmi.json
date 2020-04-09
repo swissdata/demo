@@ -1,0 +1,87 @@
+{
+  "title": {
+    "en": "Adecco Swiss Job Market Index",
+    "de": "Adecco Swiss Job Market Index",
+    "fr": "Adecco Swiss Job Market Index",
+    "it": "Adecco Swiss Job Market Index"
+  },
+  "source_name": {
+    "en": "University of Zürich",
+    "de": "Universität Zürich",
+    "fr": "Université de Zurich",
+    "it": "Università di Zurigo"
+  },
+  "source_url": "http://www.stellenmarktmonitor.uzh.ch/en/indices/asjmi.html",
+  "units": {
+    "all": {
+      "en": "index (2008 = 100)",
+      "de": "index (2008 = 100)",
+      "fr": "indice (2008 = 100)",
+      "it": "indice (2008 = 100)"
+    }
+  },
+  "aggregate": {
+    "all": "mean"
+  },
+  "dim_order": "idx_type",
+  "hierarchy": {
+    "idx_type": {
+      "sch": {
+        "pzua": {},
+        "ins": {},
+        "unw": {}
+      },
+      "scs": {},
+      "scg": {}
+    }
+  },
+  "labels": {
+    "dimnames": {
+      "idx_type": {
+        "en": "Index",
+        "de": "Index",
+        "fr": "Indice",
+        "it": "Indice"
+      }
+    },
+    "idx_type": {
+      "ins": {
+        "en": "Online job posting sites",
+        "de": "Internet-Stellenportale",
+        "fr": {},
+        "it": {}
+      },
+      "pzua": {
+        "en": "Newspaper",
+        "de": "Presse (Zeitungen und Anzeiger)",
+        "fr": {},
+        "it": {}
+      },
+      "scg": {
+        "en": "All (trend)",
+        "de": "Schweiz (geglättet)",
+        "fr": {},
+        "it": {}
+      },
+      "sch": {
+        "en": "All",
+        "de": "Schweiz",
+        "fr": {},
+        "it": {}
+      },
+      "scs": {
+        "en": "All (seasonally adjusted)",
+        "de": "Schweiz (saisonbereinigt)",
+        "fr": {},
+        "it": {}
+      },
+      "unw": {
+        "en": "Company websites",
+        "de": "Unternehmens-Webseiten",
+        "fr": {},
+        "it": {}
+      }
+    }
+  },
+  "updated_utc": "2020-04-06 10:15:06"
+}
