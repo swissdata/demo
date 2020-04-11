@@ -102,6 +102,8 @@ Uses data stored in swissdata format and visualizes it on a Website.
 
 - [SECO Quarterly GDP](https://www.seco.admin.ch/seco/en/home/wirtschaftslage---wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-/daten.html). Currently a test release, but a [demo script](http://www.christophsax.com/stuff/script.R) for how to work with swissdata data in R can be found here.
 
+- [KOF High Frequency Economic Monitoring](https://kofdata.netlify.com/) A recent project of the KOF Swiss Economic Institute (KOF ETHZ) collects high frequency datasets to monitor the Swiss economy. Datasets are exchanged in close collobaration with open data pioneers from the cantonal statistical office of Zurich. The project disseminates data in the swissdata format.
+
 ## Your Data Machine Readable
 
 
